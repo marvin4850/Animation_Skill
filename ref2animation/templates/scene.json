@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "title": "Talen choreography \u2014 calibration assets only",
+  "notice": "TALEN ART MISSING \u2022 SYNTHETIC CALIBRATION PUPPETS / PLACEHOLDER ENVIRONMENT",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "duration": 12,
+  "seed": 4850,
+  "rigs": {
+    "worker": "examples/talen-test/worker.rig.json"
+  },
+  "background": {
+    "type": "factory",
+    "placeholder": true
+  },
+  "layers": [],
+  "props": [
+    {
+      "id": "terminal",
+      "type": "terminal",
+      "position": [
+        415,
+        1220
+      ],
+      "z": 18,
+      "points": {
+        "buttons": [
+          0,
+          0
+        ]
+      },
+      "placeholder": true
+    },
+    {
+      "id": "conveyor",
+      "type": "conveyor",
+      "position": [
+        820,
+        1550
+      ],
+      "z": 5,
+      "points": {
+        "default": [
+          0,
+          0
+        ]
+      },
+      "placeholder": true
+    },
+    {
+      "id": "mechanism",
+      "type": "mechanism",
+      "position": [
+        1090,
+        1230
+      ],
+      "z": 4,
+      "points": {
+        "fault": [
+          0,
+          -70
+        ]
+      },
+      "placeholder": true
+    },
+    {
+      "id": "warning",
+      "type": "warning",
+      "position": [
+        1090,
+        1010
+      ],
+      "z": 4,
+      "points": {
+        "default": [
+          0,
+          0
+        ]
+      },
+      "placeholder": true
+    }
+  ],
+  "actors": [
+    {
+      "id": "Talen",
+      "rig": "worker",
+      "position": [
+        300,
+        1490
+      ],
+      "view": "three-quarter",
+      "facing": 1,
+      "tracks": {
+        "expression": [
+          {
+            "t": 0,
+            "value": "concentrating"
+          },
+          {
+            "t": 9.8,
+            "value": "concerned"
+          }
+        ]
+      },
+      "clips": [
+        {
+          "id": "breath",
+          "type": "breathing",
+          "start": 0,
+          "duration": 12,
+          "intensity": 0.6
+        },
+        {
+          "id": "raise",
+          "type": "reach",
+          "start": 0,
+          "duration": 2,
+          "target": "terminal.buttons",
+          "blendIn": 1.6,
+          "blendOut": 0
+        },
+        {
+          "id": "buttons",
+          "type": "press",
+          "start": 2,
+          "duration": 2,
+          "target": "terminal.buttons",
+          "speed": 2,
+          "blendIn": 0,
+          "blendOut": 0
+        },
+        {
+          "id": "release",
+          "type": "reach",
+          "start": 4,
+          "duration": 1.5,
+          "target": [
+            335,
+            1364
+          ],
+          "fromTarget": "terminal.buttons",
+          "blendIn": 0,
+          "blendOut": 0
+        },
+        {
+          "id": "turn",
+          "type": "turnBody",
+          "start": 4,
+          "duration": 1.5,
+          "view": "side"
+        },
+        {
+          "id": "travel",
+          "type": "walk",
+          "start": 5.5,
+          "duration": 3.5,
+          "from": [
+            300,
+            1490
+          ],
+          "to": [
+            730,
+            1490
+          ],
+          "steps": 10,
+          "lift": 32
+        },
+        {
+          "id": "settle",
+          "type": "stop",
+          "start": 9,
+          "duration": 1,
+          "angle": 0.035
+        },
+        {
+          "id": "look",
+          "type": "lookAt",
+          "start": 9.3,
+          "duration": 2.7,
+          "target": "mechanism.fault"
+        },
+        {
+          "id": "point-fault",
+          "type": "point",
+          "start": 10,
+          "duration": 2,
+          "target": "mechanism.fault",
+          "blendIn": 0.65,
+          "hold": true
+        }
+      ]
+    },
+    {
+      "id": "Marek",
+      "rig": "worker",
+      "position": [
+        950,
+        1490
+      ],
+      "view": "front",
+      "scale": 0.92,
+      "clips": [
+        {
+          "type": "idle",
+          "start": 0,
+          "duration": 12,
+          "intensity": 1
+        },
+        {
+          "type": "uncertain",
+          "start": 9,
+          "duration": 3,
+          "intensity": 0.6
+        }
+      ]
+    }
+  ],
+  "camera": {
+    "center": [
+      620,
+      960
+    ],
+    "follow": "Talen",
+    "offset": [
+      170,
+      -530
+    ],
+    "followWeight": 0.8,
+    "tracks": {
+      "zoom": [
+        {
+          "t": 0,
+          "value": 1
+        },
+        {
+          "t": 10,
+          "value": 1
+        },
+        {
+          "t": 12,
+          "value": 1.045,
+          "ease": "smooth"
+        }
+      ]
+    }
+  },
+  "attachments": [],
+  "transitions": []
+}

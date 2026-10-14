@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": [
+    "UI seeks to frame 240",
+    "Play advances; pause retains frame",
+    "Rig and safe-guide overlays enabled",
+    "Aspect workspace selectable",
+    "Scene hot reload retains paused frame",
+    "Export ignores UI overlays",
+    "External artwork loads with alpha; source bytes preserved",
+    "Missing artwork is a hard failure"
+  ]
+}

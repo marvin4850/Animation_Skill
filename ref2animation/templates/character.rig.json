@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "id": "calibration-worker",
+  "placeholder": true,
+  "notice": "Synthetic calibration puppet. NOT approved Talen artwork.",
+  "joints": {
+    "pelvis": {
+      "parent": null,
+      "offset": [
+        0,
+        -185
+      ]
+    },
+    "torso": {
+      "parent": "pelvis",
+      "offset": [
+        0,
+        -68
+      ]
+    },
+    "neck": {
+      "parent": "torso",
+      "offset": [
+        0,
+        -52
+      ]
+    },
+    "head": {
+      "parent": "neck",
+      "offset": [
+        0,
+        -37
+      ]
+    },
+    "hipL": {
+      "parent": "pelvis",
+      "offset": [
+        -14,
+        0
+      ]
+    },
+    "kneeL": {
+      "parent": "hipL",
+      "offset": [
+        25,
+        89
+      ],
+      "limits": [
+        0.06,
+        2.6
+      ]
+    },
+    "ankleL": {
+      "parent": "kneeL",
+      "offset": [
+        -25,
+        84
+      ]
+    },
+    "shoulderL": {
+      "parent": "torso",
+      "offset": [
+        -25,
+        -15
+      ]
+    },
+    "elbowL": {
+      "parent": "shoulderL",
+      "offset": [
+        0,
+        80
+      ],
+      "limits": [
+        0.04,
+        2.7
+      ]
+    },
+    "handL": {
+      "parent": "elbowL",
+      "offset": [
+        0,
+        72
+      ]
+    },
+    "hipR": {
+      "parent": "pelvis",
+      "offset": [
+        14,
+        0
+      ]
+    },
+    "kneeR": {
+      "parent": "hipR",
+      "offset": [
+        25,
+        89
+      ],
+      "limits": [
+        0.06,
+        2.6
+      ]
+    },
+    "ankleR": {
+      "parent": "kneeR",
+      "offset": [
+        -25,
+        84
+      ]
+    },
+    "shoulderR": {
+      "parent": "torso",
+      "offset": [
+        25,
+        -15
+      ]
+    },
+    "elbowR": {
+      "parent": "shoulderR",
+      "offset": [
+        0,
+        80
+      ],
+      "limits": [
+        0.04,
+        2.7
+      ]
+    },
+    "handR": {
+      "parent": "elbowR",
+      "offset": [
+        0,
+        72
+      ]
+    }
+  },
+  "parts": {
+    "pelvis": {
+      "from": "pelvis",
+      "size": [
+        84,
+        54
+      ],
+      "pivot": [
+        42,
+        24
+      ],
+      "z": 28,
+      "color": "#374a54",
+      "shape": "pelvis"
+    },
+    "torso": {
+      "from": "torso",
+      "size": [
+        92,
+        116
+      ],
+      "pivot": [
+        46,
+        26
+      ],
+      "z": 30,
+      "color": "#3c5360",
+      "shape": "torso"
+    },
+    "neck": {
+      "from": "neck",
+      "size": [
+        30,
+        36
+      ],
+      "pivot": [
+        15,
+        10
+      ],
+      "z": 35,
+      "color": "#caaa84"
+    },
+    "head": {
+      "from": "head",
+      "size": [
+        78,
+        92
+      ],
+      "pivot": [
+        39,
+        44
+      ],
+      "z": 45,
+      "color": "#d4b490",
+      "shape": "head"
+    },
+    "thighL": {
+      "from": "hipL",
+      "size": [
+        40,
+        111
+      ],
+      "pivot": [
+        20,
+        8
+      ],
+      "z": 8,
+      "color": "#354853",
+      "shape": "thigh",
+      "to": "kneeL"
+    },
+    "shinL": {
+      "from": "kneeL",
+      "size": [
+        36,
+        110
+      ],
+      "pivot": [
+        18,
+        8
+      ],
+      "z": 9,
+      "color": "#43545c",
+      "shape": "shin",
+      "to": "ankleL"
+    },
+    "footL": {
+      "from": "ankleL",
+      "size": [
+        62,
+        24
+      ],
+      "pivot": [
+        20,
+        12
+      ],
+      "z": 10,
+      "color": "#77818a",
+      "shape": "foot"
+    },
+    "upperArmL": {
+      "from": "shoulderL",
+      "size": [
+        37,
+        95
+      ],
+      "pivot": [
+        18,
+        7
+      ],
+      "z": 15,
+      "color": "#415865",
+      "shape": "upperArm",
+      "to": "elbowL"
+    },
+    "forearmL": {
+      "from": "elbowL",
+      "size": [
+        31,
+        87
+      ],
+      "pivot": [
+        15,
+        7
+      ],
+      "z": 16,
+      "color": "#3b505b",
+      "shape": "forearm",
+      "to": "handL"
+    },
+    "handL": {
+      "from": "handL",
+      "size": [
+        30,
+        32
+      ],
+      "pivot": [
+        15,
+        9
+      ],
+      "z": 17,
+      "color": "#1e292e",
+      "shape": "hand"
+    },
+    "thighR": {
+      "from": "hipR",
+      "size": [
+        40,
+        111
+      ],
+      "pivot": [
+        20,
+        8
+      ],
+      "z": 40,
+      "color": "#354853",
+      "shape": "thigh",
+      "to": "kneeR"
+    },
+    "shinR": {
+      "from": "kneeR",
+      "size": [
+        36,
+        110
+      ],
+      "pivot": [
+        18,
+        8
+      ],
+      "z": 41,
+      "color": "#43545c",
+      "shape": "shin",
+      "to": "ankleR"
+    },
+    "footR": {
+      "from": "ankleR",
+      "size": [
+        62,
+        24
+      ],
+      "pivot": [
+        20,
+        12
+      ],
+      "z": 42,
+      "color": "#77818a",
+      "shape": "foot"
+    },
+    "upperArmR": {
+      "from": "shoulderR",
+      "size": [
+        37,
+        95
+      ],
+      "pivot": [
+        18,
+        7
+      ],
+      "z": 47,
+      "color": "#415865",
+      "shape": "upperArm",
+      "to": "elbowR"
+    },
+    "forearmR": {
+      "from": "elbowR",
+      "size": [
+        31,
+        87
+      ],
+      "pivot": [
+        15,
+        7
+      ],
+      "z": 48,
+      "color": "#3b505b",
+      "shape": "forearm",
+      "to": "handR"
+    },
+    "handR": {
+      "from": "handR",
+      "size": [
+        30,
+        32
+      ],
+      "pivot": [
+        15,
+        9
+      ],
+      "z": 49,
+      "color": "#1e292e",
+      "shape": "hand"
+    }
+  },
+  "gait": {
+    "stanceHalf": 22,
+    "ankleHeight": 12,
+    "stepLength": 50,
+    "lift": 32
+  },
+  "layerRules": [
+    [
+      "thighL",
+      "torso"
+    ],
+    [
+      "upperArmL",
+      "torso"
+    ],
+    [
+      "torso",
+      "upperArmR"
+    ],
+    [
+      "torso",
+      "handR"
+    ]
+  ],
+  "armRest": {
+    "L": [
+      -10,
+      142
+    ],
+    "R": [
+      10,
+      142
+    ]
+  },
+  "views": {
+    "front": {
+      "parts": {}
+    },
+    "three-quarter": {
+      "parts": {}
+    },
+    "side": {
+      "parts": {}
+    },
+    "back": {
+      "parts": {}
+    },
+    "back-three-quarter": {
+      "parts": {}
+    }
+  },
+  "expressions": [
+    "neutral",
+    "concerned",
+    "angry",
+    "surprised",
+    "afraid",
+    "concentrating"
+  ]
+}

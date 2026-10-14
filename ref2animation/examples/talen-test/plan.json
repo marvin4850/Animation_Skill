@@ -1,0 +1,119 @@
+{
+  "baseScene": "examples/talen-test/scene.json",
+  "title": "Talen choreography \u2014 calibration assets only",
+  "prompt": "Talen operates a terminal, turns toward the conveyor, walks to Marek, and points to a malfunctioning mechanism while the camera follows. Silent 12-second vertical animation.",
+  "notes": [
+    "Main-character reference sheet is missing. Calibration puppets are not Talen artwork.",
+    "Marek and environment are labeled temporary placeholders."
+  ],
+  "beats": [
+    {
+      "id": "breath",
+      "duration": 12,
+      "intensity": 0.6,
+      "actor": "Talen",
+      "action": "breathing",
+      "at": 0
+    },
+    {
+      "id": "raise",
+      "duration": 2,
+      "target": "terminal.buttons",
+      "blendIn": 1.6,
+      "blendOut": 0,
+      "actor": "Talen",
+      "action": "reach",
+      "at": 0
+    },
+    {
+      "id": "buttons",
+      "duration": 2,
+      "target": "terminal.buttons",
+      "speed": 2,
+      "blendIn": 0,
+      "blendOut": 0,
+      "actor": "Talen",
+      "action": "press",
+      "at": 2
+    },
+    {
+      "id": "release",
+      "duration": 1.5,
+      "target": [
+        335,
+        1364
+      ],
+      "fromTarget": "terminal.buttons",
+      "blendIn": 0,
+      "blendOut": 0,
+      "actor": "Talen",
+      "action": "reach",
+      "at": 4
+    },
+    {
+      "id": "turn",
+      "duration": 1.5,
+      "view": "side",
+      "actor": "Talen",
+      "action": "turnBody",
+      "at": 4
+    },
+    {
+      "id": "travel",
+      "duration": 3.5,
+      "from": [
+        300,
+        1490
+      ],
+      "to": [
+        730,
+        1490
+      ],
+      "steps": 10,
+      "lift": 32,
+      "actor": "Talen",
+      "action": "walk",
+      "at": 5.5
+    },
+    {
+      "id": "settle",
+      "duration": 1,
+      "angle": 0.035,
+      "actor": "Talen",
+      "action": "stop",
+      "at": 9
+    },
+    {
+      "id": "look",
+      "duration": 2.7,
+      "target": "mechanism.fault",
+      "actor": "Talen",
+      "action": "lookAt",
+      "at": 9.3
+    },
+    {
+      "id": "point-fault",
+      "duration": 2,
+      "target": "mechanism.fault",
+      "blendIn": 0.65,
+      "hold": true,
+      "actor": "Talen",
+      "action": "point",
+      "at": 10
+    },
+    {
+      "duration": 12,
+      "intensity": 1,
+      "actor": "Marek",
+      "action": "idle",
+      "at": 0
+    },
+    {
+      "duration": 3,
+      "intensity": 0.6,
+      "actor": "Marek",
+      "action": "uncertain",
+      "at": 9
+    }
+  ]
+}

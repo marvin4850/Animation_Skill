@@ -1,0 +1,12 @@
+{
+  "character": "NOT approved Talen: calibration-worker",
+  "providedTalenSheet": false,
+  "actors": [
+    "Talen (calibration)",
+    "Marek (placeholder)"
+  ],
+  "environment": "procedural placeholder factory",
+  "rig": "worker.rig.json",
+  "assets": "Code-drawn cutout part textures; 16 parts per rig; five view slots",
+  "sourceArtModified": false
+}

@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "failures": [],
+  "warnings": [
+    "Talen: Synthetic test puppet; supplied character artwork has not been validated",
+    "Marek: Synthetic test puppet; supplied character artwork has not been validated"
+  ],
+  "metrics": {
+    "frames": 360,
+    "maxFootSlide": 0,
+    "maxContactError": 0,
+    "maxStretch": 2.55351295663786e-15,
+    "maxRootStep": 6.142671417773499,
+    "maxCameraStep": 4.91413713421889,
+    "maxJointStep": 25.158936014677476,
+    "walkLift": 31.999826706847443,
+    "plantedPairs": 1321,
+    "contacts": 60,
+    "armMotion": 16.634387130177487,
+    "legMotion": 19.188632152027278
+  },
+  "views": [
+    "three-quarter",
+    "front",
+    "side"
+  ],
+  "intersectionSamples": [],
+  "generatedAt": "2026-10-14T10:12:57.537Z",
+  "scene": "examples/talen-test/scene.json",
+  "sceneSha256": "d6bf10a0df8cb117ddcba642f124f5e8021cd37ad3be8a6ea9c032d27f421322",
+  "determinism": [
+    {
+      "frame": 0,
+      "identical": true
+    },
+    {
+      "frame": 45,
+      "identical": true
+    },
+    {
+      "frame": 90,
+      "identical": true
+    },
+    {
+      "frame": 135,
+      "identical": true
+    },
+    {
+      "frame": 180,
+      "identical": true
+    },
+    {
+      "frame": 225,
+      "identical": true
+    },
+    {
+      "frame": 270,
+      "identical": true
+    },
+    {
+      "frame": 315,
+      "identical": true
+    },
+    {
+      "frame": 359,
+      "identical": true
+    }
+  ],
+  "directVsSequential": {
+    "frame": 240,
+    "identical": true,
+    "renderedFrames": 241
+  },
+  "render": {
+    "width": 1080,
+    "height": 1920,
+    "mean": 58.417534722230094,
+    "variance": 492.308839480977
+  },
+  "alpha": {
+    "clear": 2011392,
+    "opaque": 57527
+  },
+  "status": "completed"
+}

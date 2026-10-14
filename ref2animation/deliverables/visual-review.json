@@ -1,0 +1,26 @@
+{
+  "independent": false,
+  "method": "Self-review of story/walk sheets, enlarged frames and decoded MP4 sample",
+  "passes": [
+    {
+      "subject": "anatomy and motion",
+      "result": "Calibration rig visibly articulates arms and segmented legs. Foot contacts passed geometric checks. Production Talen anatomy unavailable."
+    },
+    {
+      "subject": "composition",
+      "result": "Safe-frame geometry passed; pointing-hand occlusion corrected. Vertical factory has deliberately simple staging and large quiet background."
+    },
+    {
+      "subject": "reference fidelity",
+      "result": "Not evaluated: approved Talen/reference environment artwork was not included."
+    },
+    {
+      "subject": "continuity",
+      "result": "Story/walk samples inspected; direct/sequential PNG identical; procedural motion is pure time data."
+    },
+    {
+      "subject": "technical",
+      "result": "Dimensions/FPS/count/duration/codec/no-audio/full-decode verified; preview and clean install passed."
+    }
+  ]
+}

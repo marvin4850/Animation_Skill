@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ref2Animation preview</title><link rel="icon" href="data:,">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101b23;color:#e2ecee;font:15px system-ui;height:100vh;display:grid;grid-template-columns:minmax(320px,1fr) 320px}
+main{display:flex;align-items:center;justify-content:center;overflow:hidden;padding:18px}#stage{position:relative;height:100%;max-width:100%;aspect-ratio:9/16}canvas{display:block;width:100%;height:100%;object-fit:contain}
+aside{padding:24px;background:#1b2b36;overflow:auto}h1{font-size:24px;font-weight:600;margin-top:0}h2{font-size:15px;color:#83c5bf}button,select,input{font:inherit}button,select{background:#314c5d;color:#eef4f3;border:1px solid #56717e;border-radius:6px;padding:9px;margin:4px 0}button{cursor:pointer}button:hover{background:#476779}input[type=range]{width:100%;accent-color:#8acbc0}input[type=number]{width:100px;background:#12252e;color:#fff;border:1px solid #607785;padding:8px}
+label{display:block;margin:14px 0}.hint{font-size:13px;color:#aac0c8;line-height:1.6}#error{color:#f3ac90;white-space:pre-wrap}#safe{position:absolute;inset:5%;border:1px dashed #e0d89b;pointer-events:none;display:none}body.render{display:block;height:auto}body.render aside{display:none}body.render main{padding:0;display:block}body.render #stage{height:auto;width:100%;max-width:none}body.render canvas{width:auto;height:auto}
+@media(max-width:750px){body{grid-template-columns:1fr;grid-template-rows:65vh auto;height:auto}#stage{height:60vh}aside{padding:18px}}
+</style></head><body>
+<main><div id="stage"><canvas id="c"></canvas><div id="safe"></div></div></main>
+<aside><h1>Ref2Animation</h1><p id="title"></p><p class="hint" id="notice"></p>
+<button id="play">Play</button> <button id="reload">Reload scene</button>
+<h2>Timeline</h2><input type="range" id="timeline" min="0" value="0" step="1"><p id="clock"></p>
+<label>Frame <input id="frame" type="number" min="0" value="0"></label>
+<label>Preview fit <select id="aspect"><option value="native">Scene aspect</option><option value="wide">Landscape workspace</option><option value="square">Square workspace</option></select></label>
+<label><input id="overlay" type="checkbox"> Joints and actor bounds</label>
+<label><input id="guides" type="checkbox"> Camera safe guides</label>
+<p class="hint">Space: play/pause · ←/→: one frame<br>Scene changes reload automatically at the same frame.<br>Overlays stay out of exported frames.</p>
+<p class="hint" id="stats"></p><p id="error"></p></aside>
+<script src="gl.js"></script><script type="module" src="preview.mjs"></script>
+</body></html>
